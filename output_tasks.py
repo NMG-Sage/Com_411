@@ -8,3 +8,15 @@ print("\t Displays a tab space")
 print("\\ Displays a back slash")
 print("\" Displays a double quote")
 print("\' Displays a single quote")
+
+#Using special characters
+print("\n \t \"I am programming!\"")
+
+# Display a box
+print(" *      - ")
+print("   \\  /   ")
+print("    \\/    ")
+print("###    ###")
+print("#   ##   #")
+print("##      ##")
+print("  ###### ")
