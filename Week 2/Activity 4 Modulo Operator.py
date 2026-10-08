@@ -22,21 +22,21 @@ else:
 
 print(f"There are {odd_counter} odd and {even_counter} even")
 
-#if First_number % 2 == 0 and Second_number % 2 == 0 and Third_number % 2 == 0:
+# if First_number % 2 == 0 and Second_number % 2 == 0 and Third_number % 2 == 0:
 #    print("There are 3 even numbers and 0 odd numbers.")
-#elif First_number % 2 != 0 and Second_number % 2 != 0 and Third_number % 2 != 0:
+# elif First_number % 2 != 0 and Second_number % 2 != 0 and Third_number % 2 != 0:
 #    print("There are 0 even numbers and 3 odd numbers.")
-
-#elif First_number % 2 != 0 and Second_number % 2 == 0 and Third_number % 2 == 0:
+#
+# elif First_number % 2 != 0 and Second_number % 2 == 0 and Third_number % 2 == 0:
 #    print("There are 2 even numbers and 1 odd numbers.")
-#elif First_number % 2 == 0 and Second_number % 2 != 0  and Third_number % 2 == 0:
+# elif First_number % 2 == 0 and Second_number % 2 != 0  and Third_number % 2 == 0:
 #    print("There are 2 even numbers and 1 odd numbers.")
-#elif First_number % 2 == 0 and Second_number % 2 == 0 and Third_number % 2 != 0:
+# elif First_number % 2 == 0 and Second_number % 2 == 0 and Third_number % 2 != 0:
 #    print("There are 2 even numbers and 1 odd numbers.")
-
-#elif First_number % 2 != 0 and Second_number % 2 != 0 and Third_number % 2 == 0:
+#
+# elif First_number % 2 != 0 and Second_number % 2 != 0 and Third_number % 2 == 0:
 #    print("There are 1 even numbers and 3 odd numbers.")
-#elif First_number % 2 == 0 and Second_number % 2 != 0  and Third_number % 2 != 0:
+# elif First_number % 2 == 0 and Second_number % 2 != 0  and Third_number % 2 != 0:
 #   print("There are 1 even numbers and 2 odd numbers.")
-#elif First_number % 2 != 0 and Second_number % 2 == 0 and Third_number % 2 != 0:
+# elif First_number % 2 != 0 and Second_number % 2 == 0 and Third_number % 2 != 0:
 #    print("There are 1 even numbers and 2 odd numbers.")
