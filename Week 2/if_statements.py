@@ -1,7 +1,11 @@
-Activity = input("Enter activity: \n")
-if Activity == "calculate":
-    print("Performing calculations...\n")
+Direction = input("Enter a direction: ")
+if Direction == "up":
+    print("You go up")
+elif Direction == "down":
+    print("You go down")
+elif Direction == "left":
+    print("You go left")
+elif Direction == "right":
+    print("You go right")
 else:
-    print("Performing activity...\n")
-
-print("Activity completed!\n")
+    print("You are stationary")
