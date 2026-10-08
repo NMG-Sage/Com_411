@@ -1,5 +1,9 @@
-user_figure = int(input("Please enter your figure: \n"))
-if user_figure % 2 == 0:
-    print(f"The number {user_figure} figure is even.\n")
+First_number = int(input("Please enter 1st number: "))
+Second_number = int(input("Please enter 2nd number: "))
+
+if First_number > Second_number:
+    print("First number is greater than second number")
+elif First_number < Second_number:
+    print("First number is less than second number")
 else:
-    print(f"The number {user_figure} figure is odd.")
+    print("Both numbers are equal")
