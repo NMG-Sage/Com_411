@@ -1,5 +1,7 @@
-book = input("Enter the book genre: \n")
-if book == "adventure":
-    print("I like adventure books!\n")
+Activity = input("Enter activity: \n")
+if Activity == "calculate":
+    print("Performing calculations...\n")
+else:
+    print("Performing activity...\n")
 
-print("Finished reading book!")
+print("Activity completed!\n")
