@@ -50,6 +50,18 @@
 
 
 
-#Task 5
-print("Calculating the sum of the first 100 numbers...", end="")
-print(f"...Done! The answer is {sum(range(101))}")
+# #Task 5
+# print("Calculating the sum of the first 100 numbers...", end="")
+# print(f"...Done! The answer is {sum(range(101))}")
+
+
+
+
+#Task 6
+print("How many numbers should I sum up?")
+user_input = int(input())
+answer = 0
+counter = 0
+while counter < user_input:
+    answer = input(f"Please enter number {counter} of {user_input}")
+    counter += 1
