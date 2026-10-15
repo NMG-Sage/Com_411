@@ -54,6 +54,7 @@ print(f"There are {odd_counter} odd and {even_counter} even")
 
 
 
+
 # Direction = input("Enter a direction: ")
 # if Direction == "up":
 #     print("You go up")
