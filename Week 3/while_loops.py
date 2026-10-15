@@ -26,14 +26,23 @@
 
 
 
-#Task 3
-print("How many bars should be charged?: ")
-bars_input = int(input())
-bars_charged = 0#
-bars_charged_display = ("")
-while bars_charged < bars_input:
-    print("Charging:", end=" ")
-    bars_charged += 1
-    bars_charged_display += ("█")
-    print(f"{bars_charged_display}", end=" ")
-    print(f"{bars_charged}%")
+# #Task 3
+# print("How many bars should be charged?: ")
+# bars_input = int(input())
+# bars_charged = 0
+# bars_charged_display = ("")
+# while bars_charged < bars_input:
+#     print("Charging:", end=" ")
+#     bars_charged += 1
+#     bars_charged_display += ("█")
+#     print(f"{bars_charged_display}", end=" ")
+#     print(f"{bars_charged}%")
+
+
+
+
+#Task 4
+print("Please enter phrase")
+phrase = input("")
+for letter in phrase:
+    print("Hi", end=" ")
