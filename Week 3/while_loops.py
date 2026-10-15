@@ -41,8 +41,15 @@
 
 
 
-#Task 4
-print("Please enter phrase")
-phrase = input("")
-for letter in phrase:
-    print("Hi", end=" ")
+# #Task 4
+# print("Please enter phrase")
+# phrase = input("")
+# for letter in phrase:
+#     print("Hi", end=" ")
+
+
+
+
+#Task 5
+print("Calculating the sum of the first 100 numbers...", end="")
+print(f"...Done! The answer is {sum(range(101))}")
