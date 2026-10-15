@@ -11,7 +11,7 @@ print("How many obstacles must I avoid?")
 obstacles = int(input(""))
 obstacles_avoided = 0
 while obstacles_avoided < obstacles:
-    print("Avoiding...")
+    print("Avoiding...", end="")
     obstacles_avoided += 1
     print(f"...Done! {obstacles_avoided} avoided!")
 print("All obstacles have been avoided!")
