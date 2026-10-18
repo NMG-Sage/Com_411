@@ -36,12 +36,22 @@
 
 
 
-# Task 10
-# Ask user for word
-print("What word do you see?")
-word = input()
+# # Task 10
+# # Ask user for word
+# print("What word do you see?")
+# word = input()
+#
+# print("\nDisplaying index positions...\n")
+#
+# for count in range(0, len(word), 1):
+#     print(f"index {count}:", word[count])
 
-print("\nDisplaying index positions...\n")
 
-for count in range(0, len(word), 1):
-    print(f"index {count}:", word[count])
+
+
+# Task 11
+print("What phrase do you want to see in reverse?")
+reverse_phrase = input("")
+
+for letter in reverse_phrase:
+    print(letter[reverse_phrase], end="")
