@@ -50,8 +50,4 @@
 
 
 # Task 11
-print("What phrase do you want to see in reverse?")
-reverse_phrase = input("")
-
-for letter in reverse_phrase:
-    print(letter[reverse_phrase], end="")
+user_input_phrase = input("What phrase would you like to see in reverse?")

@@ -60,23 +60,21 @@
 #Task 6
 # Ask user for number
 print("How many numbers should I sum up?")
-number_to_sum = int(input())
+count = int(input())
 
 # Declare a control variable
 summed = 0
-
+total = 0
 # Display blank line
 
 print()
 
 # Sum numbers
 
-total = 0
-
-while summed < number_to_sum:
-    print(f"Please enter number {summed+1} of {number_to_sum}:")
+while summed < count:
+    print(f"Please enter number {summed+1} of {count}:")
     number = int(input())
-    total = total + number
+    total += number
     summed = summed + 1
 
 # Display result
