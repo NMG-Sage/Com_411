@@ -49,12 +49,28 @@
 
 
 # # Task 7
-def climb_ladder(steps_remaining, steps_crossed):
-    if steps_remaining > steps_crossed:
-        print("Still some way to go!")
-    else:
-        print("We are almost there!")
+# def climb_ladder(steps_remaining, steps_crossed):
+#     if steps_remaining > steps_crossed:
+#         print("Still some way to go!")
+#     else:
+#         print("We are almost there!")
+#
+#
+# climb_ladder(5, 2)
+# climb_ladder(2, 5)
 
 
-climb_ladder(5, 2)
-climb_ladder(2, 5)
+# # Task 8
+# # Call 1st function to display the ladder
+# def display_ladder(steps):
+#     for step in range(steps):
+#         print("__")
+#         print("||")
+#
+# # Call second function that takes user input and runs the display ladder function
+# def create_ladder():
+#     steps = int(input("How many steps are on the ladder?"))
+#     display_ladder(steps)
+#
+#
+# create_ladder()
