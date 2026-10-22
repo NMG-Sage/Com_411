@@ -74,3 +74,29 @@
 #
 #
 # create_ladder()
+
+
+# Task 9
+def sum_weights(weight_of_character, weight_of_inventory):
+    sum_of_weights = weight_of_character + weight_of_inventory
+    return sum_of_weights
+
+
+def calc_avg_weight(weight_of_character, weight_of_inventory):
+    ave_weight = sum_weights(weight_of_character, weight_of_inventory) / 2
+    return ave_weight
+
+
+def run():
+    weight_of_character = float(input("Enter character weight: "))
+    weight_of_inventory = float(input("Enter inventory weight: "))
+    choice = input("Enter sum or average: ")
+    if choice == "sum":
+        weight = sum_weights(weight_of_character, weight_of_inventory)
+        print(weight)
+    else:
+        weight = calc_avg_weight(weight_of_character, weight_of_inventory)
+        print(weight)
+
+
+run()
