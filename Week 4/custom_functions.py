@@ -2,7 +2,7 @@
 # #Define a function
 # def listen():
 #     print("Enter the word that represents the sound")
-#     #Store user input in sound
+#     #Store user input in a variable
 #     sound = input("")
 #     #print (sound)
 #     print(f"That was a loud {sound}!")
@@ -10,9 +10,7 @@
 # listen()
 
 
-
-
-# #Task 4
+# # Task 4
 # def identity():
 #     word = input("What do you see?")
 #     if word == "a large boulder":
@@ -20,8 +18,6 @@
 #     else:
 #         print("We will be fine.")
 # identity()
-
-
 
 
 # # Task 5
@@ -39,21 +35,26 @@
 # escape_by(plan = input("Enter a plan: "))
 
 
+# # Task 6
+# def cross_bridge(steps_crossed):
+#     for step in range (steps_crossed):
+#         print("Crossed step.")
+#
+#     if steps_crossed > 5:
+#         print("The bridge is collapsing!")
+#     else:
+#         print("We must keep going!")
+#
+# cross_bridge(steps_crossed = int(input("Enter the number of steps: ")))
 
 
-#Task 6
-def cross_bridge(steps_crossed):
-    for step in range (steps_crossed):
-        print("Crossed step.")
-
-    if steps_crossed > 5:
-        print("The bridge is collapsing!")
+# # Task 7
+def climb_ladder(steps_remaining, steps_crossed):
+    if steps_remaining > steps_crossed:
+        print("Still some way to go!")
     else:
-        print("We must keep going!")
-
-cross_bridge(steps_crossed = int(input("Enter the number of steps: ")))
+        print("We are almost there!")
 
 
-
-
-#Task 7
+climb_ladder(5, 2)
+climb_ladder(2, 5)
