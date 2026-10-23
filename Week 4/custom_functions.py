@@ -76,27 +76,96 @@
 # create_ladder()
 
 
-# Task 9
-def sum_weights(weight_of_character, weight_of_inventory):
-    sum_of_weights = weight_of_character + weight_of_inventory
-    return sum_of_weights
+# # Task 9
+# def sum_weights(weight_of_character, weight_of_inventory):
+#     sum_of_weights = weight_of_character + weight_of_inventory
+#     return sum_of_weights
+#
+#
+# def calc_avg_weight(weight_of_character, weight_of_inventory):
+#     ave_weight = sum_weights(weight_of_character, weight_of_inventory) / 2
+#     return ave_weight
+#
+#
+# def run():
+#     weight_of_character = float(input("Enter character weight: "))
+#     weight_of_inventory = float(input("Enter inventory weight: "))
+#     choice = input("Enter sum or average: ")
+#     if choice == "sum":
+#         weight = sum_weights(weight_of_character, weight_of_inventory)
+#         print(weight)
+#     else:
+#         weight = calc_avg_weight(weight_of_character, weight_of_inventory)
+#         print(weight)
+#
+#
+# run()
 
 
-def calc_avg_weight(weight_of_character, weight_of_inventory):
-    ave_weight = sum_weights(weight_of_character, weight_of_inventory) / 2
-    return ave_weight
+# Task 10
+def display_box(word):
+    num_dashes = 4 + len(word)
+    print("-" * num_dashes)
+    print(f"| {word} |")
+    print("-" * num_dashes)
+
+
+def display_lower_case(word):
+    print(word.lower())
+
+
+def display_upper_case(word):
+    print(word.upper())
+
+
+def display_mirrored(word):
+    mirrored = ""
+    for letter in reversed(word):
+        mirrored += letter
+    print(f"{word} | {mirrored}")
+
+
+def display_repeated(word):
+    print("How many times should the word be displayed?")
+    repetitions = int(input())
+
+    for repetition in range(repetitions):
+        # even repetition
+        if repetition % 2 == 0:
+            print(display_lower_case(word))
+            # odd repetition
+        else:
+            print(display_upper_case(word))
 
 
 def run():
-    weight_of_character = float(input("Enter character weight: "))
-    weight_of_inventory = float(input("Enter inventory weight: "))
-    choice = input("Enter sum or average: ")
-    if choice == "sum":
-        weight = sum_weights(weight_of_character, weight_of_inventory)
-        print(weight)
+    print("Please enter a word:")
+    word = input()
+
+    # get the user's selection
+    print("What would you like to do with this word?")
+    print("[1] Display in a box")
+    print("[2] Display lower-case")
+    print("[3] Display upper-case")
+    print("[4] Display mirrored")
+    print("[5] Display repeated")
+    print("[6] Quit")
+
+    response = int(input())
+
+    # determine and execute action
+    if response == 1:
+        display_box(word)
+    elif response == 2:
+        display_lower_case(word)
+    elif response == 3:
+        display_upper_case(word)
+    elif response == 4:
+        display_mirrored(word)
+    elif response == 5:
+        display_repeated(word)
     else:
-        weight = calc_avg_weight(weight_of_character, weight_of_inventory)
-        print(weight)
+        print("Unknown option.")
 
 
 run()
