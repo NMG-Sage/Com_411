@@ -53,28 +53,28 @@
 #     run_task3()
 
 
-# Task 4
-def directions():
-    steps = ["Forward", "Backward", "Left", "Right"]
-    return steps
-
-
-def menu_and_input():
-    print("Please select a direction:")
-    menu_directions = directions()
-    for direction in range(len(menu_directions)):
-        print(f"{direction} : {menu_directions[direction]}")
-    user_choice = input("> ")
-    return user_choice
-
-
-def run_task4():
-    route = [""]
-    print("Working out escape route...")
-    for i in range(5):
-        route.append(menu_and_input())
-    print(f"Escape route: {route}")
-
-
-if __name__ == "__main__":
-    run_task4()
+# # Task 4
+# def directions():
+#     steps = ["Forward", "Backward", "Left", "Right"]
+#     return steps
+#
+#
+# def menu_and_input():
+#     print("Please select a direction:")
+#     menu_directions = directions()
+#     for direction in range(len(menu_directions)):
+#         print(f"{direction} : {menu_directions[direction]}")
+#     user_choice = input("> ")
+#     return user_choice
+#
+#
+# def run_task4():
+#     route = []
+#     print("Working out escape route...")
+#     for i in range(5):
+#         route.append(menu_and_input())
+#     print(f"Escape route: {route}")
+#
+#
+# if __name__ == "__main__":
+#     run_task4()
