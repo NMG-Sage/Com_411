@@ -51,17 +51,48 @@
 
 
 # Task 3
-def search(file_name=input("Enter the file name: ")):
-    print("Searching...")
-    with open(file_name, "r") as file:
-        for line in file:
-            print(f"Looked in {line}")
-        print("...Done!")
+# def search(file_name=input("Enter the file name: ")):
+#     print("Searching...")
+#     with open(file_name, "r") as file:
+#         for line in file:
+#             print(f"Looked in {line}")
+#         print("...Done!")
+#
+#
+# def run_task3():
+#     search()
+#
+#
+# if __name__ == "__main__":
+#     run_task3()
 
 
-def run_task3():
-    search()
+# Task 4
+def search_books(filename=input("Enter the file name: ")):
+    print("Searching books...")
+    sections = ""
+    books = "Books:\n"
+    with open(filename, "r") as file:
+        for each_line in file:
+            if each_line.startswith("Section"):
+                sections += each_line
+            else:
+                books += each_line
+    print("Done!")
+    return f"\n{sections}\n\n{books}"
+
+
+def save(filename=input("Enter the file name: "), user_input_add=input("Enter text: ")):
+    print("Saving...")
+    with open(filename, "w") as file:
+        file.write(user_input_add)
+        print("Done!")
+
+
+def run_task4():
+    data = search_books(filename=input("Enter the file name: "))
+    save("exported_books.txt", data)
 
 
 if __name__ == "__main__":
-    run_task3()
+    run_task4()
