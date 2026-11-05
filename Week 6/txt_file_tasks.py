@@ -16,6 +16,7 @@
 #
 # if __name__ == "__main__":
 #     run()
+import csv
 
 
 # Task 2
@@ -68,31 +69,45 @@
 
 
 # Task 4
-def search_books(filename=input("Enter the file name: ")):
-    print("Searching books...")
-    sections = ""
-    books = "Books:\n"
-    with open(filename, "r") as file:
-        for each_line in file:
-            if each_line.startswith("Section"):
-                sections += each_line
-            else:
-                books += each_line
-    print("Done!")
-    return f"\n{sections}\n\n{books}"
+# def search_books(filename=input("Enter the file name: ")):
+#     print("Searching books...")
+#     sections = ""
+#     books = "Books:\n"
+#     with open(filename, "r") as file:
+#         for each_line in file:
+#             if each_line.startswith("Section"):
+#                 sections += each_line
+#             else:
+#                 books += each_line
+#     print("Done!")
+#     return f"\n{sections}\n\n{books}"
+#
+#
+# def save(filename=input("Enter the file name: "), user_input_add=input("Enter text: ")):
+#     print("Saving...")
+#     with open(filename, "w") as file:
+#         file.write(user_input_add)
+#         print("Done!")
+#
+#
+# def run_task4():
+#     data = search_books(filename=input("Enter the file name: "))
+#     save("exported_books.txt", data)
+#
+#
+# if __name__ == "__main__":
+#     run_task4()
 
 
-def save(filename=input("Enter the file name: "), user_input_add=input("Enter text: ")):
-    print("Saving...")
-    with open(filename, "w") as file:
-        file.write(user_input_add)
-        print("Done!")
+# Task 5
+import csv
 
 
-def run_task4():
-    data = search_books(filename=input("Enter the file name: "))
-    save("exported_books.txt", data)
+def read_csv(filename):
+    with open(filename, 'r') as file:
+        csv_reader = csv.reader(file)
+        heading = next(csv_reader)
+        print(heading)
 
 
-if __name__ == "__main__":
-    run_task4()
+read_csv("clothing.csv")
