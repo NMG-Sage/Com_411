@@ -98,16 +98,3 @@ import csv
 # if __name__ == "__main__":
 #     run_task4()
 
-
-# Task 5
-import csv
-
-
-def read_csv(filename):
-    with open(filename, 'r') as file:
-        csv_reader = csv.reader(file)
-        heading = next(csv_reader)
-        print(heading)
-
-
-read_csv("clothing.csv")
