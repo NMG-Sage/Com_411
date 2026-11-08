@@ -78,3 +78,8 @@
 #
 # if __name__ == "__main__":
 #     run_task4()
+
+
+import os
+
+print(os.getcwd())

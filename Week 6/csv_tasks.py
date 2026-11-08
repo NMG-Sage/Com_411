@@ -17,17 +17,19 @@
 #
 # if __name__ == "__main__":
 #     run_task5()
-import csv
 
 
 # Task 6
+import csv
+
+
 def extract(filepath):
     print("Extracting...", end=" ")
-    with open(filepath) as file_data:
-        csv_reader = csv.reader(file_data)
-        next(csv_reader)
+    with open(filepath, "r") as file_data:
+        data = csv.reader(file_data)
+        next(data)
         names = ""
-        for line in file_data:
+        for line in data:
             names += f"{line[1]}\n"
     print("Done!")
     print(f"The extracted items are:\n{names}")
@@ -39,3 +41,4 @@ def run_task2():
 
 if __name__ == "__main__":
     run_task2()
+
