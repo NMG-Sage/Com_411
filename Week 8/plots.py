@@ -46,32 +46,68 @@
 #     plt.show()
 
 
-# Task 3
+# # Task 3
+# import matplotlib.pyplot as plt
+#
+#
+# def coordinate():
+#     x = int(input("Enter the x coordinate: "))
+#     y = int(input("Enter the y coordinate: "))
+#     return x, y
+#
+#
+# def path():
+#     print("Retrieving path...")
+#     x_values = []
+#     y_values = []
+#     for i in range(4):
+#         data = coordinate()
+#         x_values.append(data[0])
+#         y_values.append(data[1])
+#     return x_values, y_values
+#
+#
+# def run_task3():
+#     values = path()
+#     plt.plot(values[0], values[1], "or--")
+#     plt.show()
+#
+#
+# if __name__ == "__main__":
+#     run_task3()
+
+
+# Task 4
 import matplotlib.pyplot as plt
+import random as rnd
+
+def data():
+    paths = {}
+    line_style = input("What line style would you like to use?")
+    color = input("What color would you like for the line?")
+    marker_style = input("What marker style would you like for the line?")
+    paths['line_style'] = line_style
+    paths['color'] = color
+    paths['marker_style'] = marker_style
+    return paths
 
 
-def coordinate():
-    x = int(input("Enter the x coordinate: "))
-    y = int(input("Enter the y coordinate: "))
-    return x, y
-
-
-def path():
-    print("Retrieving path...")
-    x_values = []
-    y_values = []
-    for i in range(4):
-        data = coordinate()
-        x_values.append(data[0])
-        y_values.append(data[1])
-    return x_values, y_values
-
-
-def run_task3():
-    values = path()
-    plt.plot(values[0], values[1], "or--")
+def generate():
+    line_amount = int(input("How many lines would you like to display?"))
+    for i in range(line_amount):
+        values = data()
+        x_values = rnd.sample(range(1, 10), 5)
+        y_values = rnd.sample(range(1, 10), 5)
+        line_format = f"{values['line_style']}{values['color']}{values['marker_style']}"
+        plt.plot(x_values, y_values, line_format)
     plt.show()
 
 
+def run_task4():
+    print("Running...")
+    generate()
+    print("Done!")
+
+
 if __name__ == "__main__":
-    run_task3()
+     run_task4()
